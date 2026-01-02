@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    background: #252424;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    position: relative;
+    height: 500px;
+    width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.box1 {
+    height: 40%;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, rgb(82, 181, 243), rgb(250, 72, 223));
+}
+
+.box2{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 42%;        
+    left: 50%;     
+    transform: translate(-50%, -50%);
+}
+
+.box2 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.box3 {
+    height: calc(100% - 40%);
+    width: 100%;
+    background-color: #fff;
+    padding-top: 90px;
+}
+
+.box3 .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.box3 .inner h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.box3 .inner p{
+    padding-top: 5px;
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.box3 .inner .icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
